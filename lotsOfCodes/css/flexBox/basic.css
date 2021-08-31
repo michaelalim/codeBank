@@ -1,0 +1,112 @@
+.container > div{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffeead;
+}
+
+.container > li{
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #ffeead;
+    background: darkblue;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+/* DESIGNING INSIDE TEXT-AREA */
+input{
+    font-size: 1.00em;
+    background: darkblue;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    color: #ffeead;
+  }
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    color: #ffeead;
+}
+
+input::placeholder{
+    color:  #ffeead;
+}
+/* END SANG CODE SA TEXT-AREA DESIGN */
+
+html, body{
+    background: #ffeead;
+    margin: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container > div:nth-child(1){
+    background: darkblue;
+}
+
+.container > div:nth-child(2){
+    background: darkcyan;
+}
+
+.container > div:nth-child(3){
+    background: darkgoldenrod;
+}
+
+.container > div:nth-child(4){
+    background: dodgerblue;
+}
+.container > div:nth-child(5){
+    background: darkblue;
+}
+
+.container > div:nth-child(6){
+    background: darkcyan;
+}
+
+.container > div:nth-child(7){
+    background: darkgoldenrod;
+}
+
+.container > div:nth-child(8){
+    background: dodgerblue;
+}
+.container > div:nth-child(9){
+    background: darkblue;
+}
+
+.container > div:nth-child(10){
+    background: darkcyan;
+}
+
+.container > div:nth-child(11){
+    background: darkgoldenrod;
+}
+
+.container > div:nth-child(12){
+    background: dodgerblue;
+}
+.container > div:nth-child(13){
+    background: darkblue;
+}
+
+.container > div:nth-child(14){
+    background: darkcyan;
+}
+
+.container > div:nth-child(15){
+    background: darkgoldenrod;
+}
+
+.container > div:nth-child(16){
+    background: dodgerblue;
+}
+.container > div:nth-child(17){
+    background: darkblue;
+}
+
+.container > div:nth-child(18){
+    background: darkcyan;
+}
+

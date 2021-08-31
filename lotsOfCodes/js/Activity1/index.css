@@ -1,0 +1,36 @@
+body, html{
+    background: lightskyblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1em;
+}
+
+
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 3em;
+}
+
+button{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    display: grid;
+    border-radius: 5px;
+}
+
+#increment-btn{
+    background: darkcyan;
+    color: white;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+}

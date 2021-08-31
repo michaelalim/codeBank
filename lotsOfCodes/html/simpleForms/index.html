@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="results.html" method="GET" enctype="multipart/form-data"><!-- this could be POST if we have a server -->
+            <div class="form-container">   
+                <div class="form-el">
+                    <label for="name"> Name: </label>
+                    <input name="name" id="name" type="text" placeholder="Input your Name" required>
+                </div>
+                <div class="form-el">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" placeholder="Type Password" required>
+                </div>
+                <div class="form-el">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Input Email" required>
+                </div>
+                <div class="form-el">
+                    <label for="birthday">Birthdate:  </label>
+                    <input type="date" id="birthday" name="birthday" min="1900-01-01">
+                </div>
+                <div class="form-el">
+                    <label for="age">Age: </label>
+                    <input type="number" id="age" name="age" placeholder="Input Age" step="1" min="1" max="150">
+                </div>
+                <div class="form-el">
+                    <span>I love:</span>
+                    <div class="cbox" id="cbox1">
+                        <label for="banana">Banana</label>
+                        <input type="checkbox" id="banana" name="banana">
+                    </div>
+                    <div class="cbox" id="cbox2">
+                        <label for="Chocolate">Chocolate</label>
+                        <input type="checkbox" id="Chocolate" name="chocolate">
+                    </div>
+                    <div class="cbox" id="cbox3">
+                        <label for="Pizza">Pizza</label>
+                        <input type="checkbox" id="pizza" name="pizza">
+                    </div>
+                </div>
+                <div class="form-el">
+                    <span>Gender</span>
+                    <div class="rbtn" id="rbtn1">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                    </div>
+                    <div class="rbtn" id="rbtn2">
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                    </div>
+                </div>
+                <div class="form-el">
+                    <label for="eyeColor">Eye Color </label>
+                    <select name="eyeColor" id="eyeColor" class="eyeColor">
+                        <option value="Green" id="green">Green</option>
+                        <option value="Blue" id="blue">Blue</option>
+                        <option value="Brown" id="brown">Brown</option>
+                    </select>
+                </div>
+                <div class="form-el">
+                    <label for="school">School </label>
+                    <select name="school" id="school" class="school" multiple>
+                        <option value="Central Philippine University" id="CPU">Central Philippine University</option>
+                        <option value="University of San Agustin" id="USA">University of San Agustin</option>
+                        <option value="University of the Philippines" id="UP">University of the Philippines</option>
+                        <option value="University of Iloilo" id="UI">University of Iloilo</option>
+                    </select>
+                </div>
+                <div class="form-el">
+                    <label for="bio">Bio</label>
+                    <textarea name="bio" id="bio" class="bio">Make sure no white space when putting value here.</textarea>
+                </div>
+                <!-- this is hidden element, commonly used for fancy javascript sending info when submitting-->
+                <input type="hidden" name="hidden" value="hello I'm hidden">
+                <div class="form-el">
+                    <label for="file">Upload File:</label>
+                    <input type="file" id="file" name="file">
+                </div>
+                <div class="form-el">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"><!-- purpose is phone users will have number keypad-->
+                </div>
+                <div class="form-el">
+                    <label for="site">Your website:</label>
+                    <input type="url" name="site" id="site"><!-- purpose is url keypad for phone-->
+                </div>
+                <div class="form-el">
+                    <label for="color">Color</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                <div class="form-el button-div">
+                    <button type="reset"> Reset </button>
+                    <button type="submit"> Submit </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

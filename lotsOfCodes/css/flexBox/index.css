@@ -1,0 +1,213 @@
+/* FIGURE 1 */
+
+#container1{
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+/* FIGURE 2 */
+
+#container2{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction: column; /*row, column-reverse, row-reverse*/
+}
+
+/* FIGURE 3 */
+#container3{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    justify-content: space-between; /*flex-start, flex-end, center, space-around, space-evenly*/
+}
+
+/* FIGURE 4 */
+#container4{
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+#container4 > div:nth-child(3){
+    margin-left: auto;
+} /* or just a simple div id could be of use here too */
+
+/* FIGURE 5 */
+#container5{
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+#container5 > div{
+    flex: 1; /* You can also erase this so that #container5 > .search would be much longer since the 
+                other divs would be at normal size*/
+}
+
+#container5 > .search {
+    flex: 2;
+}
+
+/* Figure 5 task */
+/* SEARCH should not stretch while HOME and LOGOUT should */
+#container5t{
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+#container5t > div{
+    flex: 1; 
+}
+
+#container5t > .search {
+    flex: none;
+}
+
+/* You can also do this by deleting the div selector and put this
+.home, .logout{
+    flex: 1;
+}
+
+/* Figure 6 */
+#container6{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    height: 200px;
+    align-items: center; 
+}
+
+#container6 > .logout {
+    align-self: flex-end;
+}
+
+#container6 > .home{
+    align-self: flex-start;
+}
+
+/* in terms of vertical alignment, the contents will fully occupy the container vertically unless you put
+align-items in it */
+/* center, flex-start, flex-end, 
+
+/* Figure 7 */
+#container7{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: flex-end;
+    align-items: flex-end; 
+    
+    /* kung nakacolumn si flex-direction, du nagsuli roles ni justify-content kag align items*/
+}
+
+/* Figure 8 */
+#container8{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container8 > div{
+    width: 500px; 
+    /* the contents would be less than 500px because they are scale down to match the size of each other relative to the size of the container | pretty sure if you want them all to be equal, using 'flex: 1' would be much better, this will only be useful when you activate 'flex-wrap: wrap' */
+    
+}
+
+/* Figure 9 */
+#container9{
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+#container9 > .home{
+    flex-grow: 10; /* content's size relative to the size of browser when increased  */
+    flex-shrink: 1; /* size relative to browser when decreases */
+    flex-basis: 200px;     /* base width of the element, is responsible when should it grow or shrink */
+}
+
+#container9 > .logout{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    /* shorthand is 'flex: 1 1 200px;' */
+}
+
+/* Figure 10 */
+#container10{
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+#container10 > .home{
+    order: 2;
+}
+
+#container10 > .search{
+    order: 1;
+}
+
+#container10 > .logout{
+    order: -1;
+}
+
+/* BONUSES */
+
+/* Figure 11 */
+#container11{
+    border: 5px solid #ffcc5c;
+    display: flex;
+}
+
+#container11 > .search{
+    flex: 1 1 0;
+}
+
+
+@media all and (max-width: 700px){
+    .container {
+        flex-wrap: wrap;
+    }
+    .container > li{
+        flex: 1 1 50%;
+    }
+    .search > input{
+        text-align: center;
+    }
+    #container11 > .search{
+        order: 1; /* Everytime maggamay ang interface kag malain iya format manaog si search*/
+    }    
+}
+
+/* Figure 12 */
+#container12{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#container12 > div{
+    padding: 0;
+    background: none;
+}
+
+#container12 > div > img {
+    width: 150px;
+    height: 100px;
+}
+
+/* Figure 12b */
+#container12b{
+    border: 5px solid #ffcc5c;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container12b > div{
+    padding: 0;
+    background: none;
+    flex: 1 1 150px;
+}
+
+#container12b > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,76 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+body, html{
+    background: beige;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.form-container{
+    display: grid;
+    grid-gap: 5px;
+    background: bisque;
+    padding: 20px 0;
+    height: 100%;
+}
+
+.form-el > span{
+    display: inline-block;
+    margin-left: 2.5em;
+}
+
+.form-el > input,
+.form-el > select,
+.form-el > textarea{
+    border: 1px solid burlywood;
+    background: antiquewhite;
+    color: brown;
+}
+
+.form-el > input:hover, .form-el > input:active, .form-el > input:focus,
+.form-el > select:hover, .form-el > select:active, .form-el > select:focus,
+.form-el > textarea:hover, .form-el > textarea:active, .form-el > textarea:focus
+{
+    color: chocolate;
+    outline: none;
+    border: 2px solid burlywood;
+}
+
+.form-el #file{
+    max-width: 140px;
+    font-size: .8em;
+}
+
+.form-el button{
+    background: bisque;
+    border: 1px solid burlywood;
+    color: darkgoldenrod;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 5px 20px;
+}
+
+.button-div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12px;
+    margin-top: 8px;
+    border-top: 1px solid burlywood;
+}
+
+.form-container label{
+    min-width: 80px;
+    display: inline-block;
+    text-align: right;
+    margin-left: 2.5em;
+}
